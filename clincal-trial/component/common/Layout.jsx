@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './Footer';
 import Header from './Header';
 
 const Layout = (props) =>{
@@ -8,7 +9,7 @@ const Layout = (props) =>{
       <div className='layout'>
         <Header />
             {children}
-        <Header />
+        <Footer />
       </div>
     );
 }

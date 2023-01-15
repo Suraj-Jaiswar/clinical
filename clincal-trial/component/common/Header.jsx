@@ -1,6 +1,8 @@
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Link from 'next/link';
+import logo from '../../public/Logo.png';
+import Image from "next/image";
 
 const Header = (props) =>{
 
@@ -8,16 +10,22 @@ const Header = (props) =>{
         <section className="header-main">
             <Container maxWidth="ls" fixed>
                 <div className="container">
-                    <div className="header-brand">
-                        <h2>Clincal</h2>
+                    <div className="header_brand">
+                        <Link href="/">
+                            {/* <h2 className="text-white">Clincal</h2> */}
+                            <Image
+                                src={logo}
+                                alt="logo"
+                            />
+                        </Link>
                     </div>
                     <div className="header-links">
                         <ul className="links-list">
                             <li className="link text-white">
-                                <Link href='/'>About Us</Link>
+                                <Link href='/'>Home</Link>
                             </li>
                             <li className="link text-white">
-                                <Link href='/'>Industries</Link>
+                                <Link href='/about'>About Us</Link>
                             </li>
                             <li className="link text-white">
                                 <Link href='/'>Services</Link>
@@ -31,9 +39,11 @@ const Header = (props) =>{
                         </ul>
                     </div>
                     <div className="header-contact-btn">
-                        <Button variant="outlined">
-                            Contact Now
-                        </Button>
+                        <Link href='/contact'>
+                            <Button variant="contained">
+                                Contact Now
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </Container>

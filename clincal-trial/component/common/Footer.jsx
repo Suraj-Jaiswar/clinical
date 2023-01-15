@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
+import {BsTelephoneFill, BsEnvelopeFill, BsGeoAltFill, BsInstagram, BsFacebook, BsLinkedin} from 'react-icons/bs';
+
 
 const Footer = () => {
     return ( 
@@ -14,19 +16,32 @@ const Footer = () => {
                         <ul className="sub-link contact_us">
                             <li>
                                 <div className="footer-icon-text sub-link-height">
-                                    <Link href={"tel:8097729557"} target="_blank" rel="noreferrer">
-                                        <span>8779265557 / 8097729557</span>
-                                    </Link>
+                                    <BsTelephoneFill/>
+                                    <span>
+                                        <Link href={"tel:8108982906"} target="_blank"  className="mgl-5" rel="noreferrer">
+                                            <span>8108982906</span>
+                                        </Link>
+                                    </span> 
+                                    <span>
+                                        <Link href={"tel:9867372672"} target="_blank"  className="mgl-5" rel="noreferrer">
+                                            <span>9867372672</span>
+                                        </Link>
+                                    </span>
+                                    <span>
+                                        <Link href={"tel:9958845036"} target="_blank"  className="mgl-5" rel="noreferrer">
+                                            <span>9958845036</span>
+                                        </Link>
+                                    </span>
                                 </div>
                             </li>
-                            <li>
+                            {/* <li>
                                 <div className="footer-icon-text sub-link-height">
-                                    <span>katalystacademy555@gmail.com</span>
+                                    <span></span>
                                 </div>
-                            </li>
+                            </li> */}
                             <li>
                                 <div className="footer-icon-address">
-                                    <span>Office No.801, D Square Bldg, Dadabhai Road, Opp. CNM School, Vile Parle (W), Mumbai-400056</span>
+                                    <div className="mgt-5"><BsGeoAltFill size='20px'/></div><div className="mgl-5 footer-add">G-1,Ganesh Wadi, CHS Ltd, BLDG-5 Marol, MIDC, Andheri East, Mumbai-400093</div>
                                 </div>
                             </li>
                         </ul>
@@ -62,15 +77,15 @@ const Footer = () => {
                         <ul className="sub-link sub-link-height">
                             <li>
                                 <div className="social-wrapper">
-                                    <div className="social-holder">
+                                    <div className="social-holder mgtb-10">
                                         Facebook
                                     </div>
-                                    <div className="social-holder">
-                                        <Link href="https://instagram.com/katalystacademy?utm_medium=copy_link" target="_blank" rel="noreferrer">
+                                    <div className="social-holder mgtb-10">
+                                        <Link href="" target="_blank" rel="noreferrer">
                                             Instagram
                                         </Link>
                                     </div>
-                                    <div className="social-holder">
+                                    <div className="social-holder mgtb-10">
                                         Linkdin
                                     </div>
                                 </div>
@@ -80,7 +95,7 @@ const Footer = () => {
                 </Grid>
                 <Grid>
                     <div className="footer-rights font-14 logo-footer">
-                        @2022 katalyst Academy Pvt. Ltd.
+                        @2023 CTRServices.com
                     </div>
                 </Grid>
             </Container>

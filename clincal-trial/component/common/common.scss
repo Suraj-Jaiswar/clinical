@@ -39,7 +39,7 @@ $paddings: 0, 5, 10, 15, 20;
 		padding-right: $remValue;
 	}
 }
-@for $i from 5 through 20 {
+@for $i from 5 through 30 {
 	$remValue: #{$baseValue * $i}rem;
 	.mg-#{$i} {
 		margin: $remValue;
@@ -114,7 +114,15 @@ $paddings: 0, 5, 10, 15, 20;
     }
     .link a{
         padding: 35px 0 !important;
-        margin-right: 40px !important;    
+        margin-right: 40px !important;
+        font-weight: 600;
+    }
+}
+.header_brand{
+    img{
+        height: 80px;
+        width: 200px;
+        object-fit: contain;
     }
 }
 .footer{
@@ -156,7 +164,7 @@ $paddings: 0, 5, 10, 15, 20;
 }
 
 .section-container{
-    padding-top: 4rem;
+    // padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #f9f9f9;
 }
@@ -164,5 +172,11 @@ $paddings: 0, 5, 10, 15, 20;
     margin: 0;
 }
 .section-heading{
-    margin-bottom: 80px;
+    margin: 60px 0px;
+}
+.footer-add{
+    line-height: 1.867;
+}
+.footer-icon-address{
+    display: flex;
 }

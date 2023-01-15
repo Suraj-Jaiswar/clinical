@@ -4,12 +4,13 @@ import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Styles from './contact.module.scss';
+import axios from 'axios';
 
 const Contact = (props) =>{
     const [userData, setUserData] = useState({});
     
     const handleChange=(key,value) =>{
-        let info = {...contactInfo};
+        let info = {...userData};
         info[key] = value;
         setUserData({...info});
     }
@@ -17,10 +18,12 @@ const Contact = (props) =>{
     const handleSubmit= async() =>{
         if(Object.keys(userData).length){
             let formData = {...userData};
-            let res = await fetch('/api/send', {
-                method: 'POST',
-                body: JSON.stringify(formData)
-            })
+            try{
+                let res = await axios.post('/api/addUser', formData)
+                console.log(res.data);
+            }catch(err){
+                console.log(err);    
+            }
         }
     }
 
@@ -40,7 +43,7 @@ const Contact = (props) =>{
                                 id="first_name" 
                                 label="First Name" 
                                 variant="outlined" 
-                                onClick={(e)=>{handleChange('first_name', e.target.value)}}
+                                onChange={(e)=>{handleChange('firstName', e.target.value)}}
                                 />
                         </div>
                     </Grid>
@@ -51,7 +54,7 @@ const Contact = (props) =>{
                                 id="last_name" 
                                 label="Last Name" 
                                 variant="outlined" 
-                                onClick={(e)=>{handleChange('last_name', e.target.value)}}
+                                onChange={(e)=>{handleChange('lastName', e.target.value)}}
                                 />
                         </div>
                     </Grid>
@@ -62,7 +65,7 @@ const Contact = (props) =>{
                                 id="email" 
                                 label="Email" 
                                 variant="outlined" 
-                                onClick={(e)=>{handleChange('email', e.target.value)}}
+                                onChange={(e)=>{handleChange('email', e.target.value)}}
                                 />
                         </div>
                     </Grid>
@@ -71,9 +74,12 @@ const Contact = (props) =>{
                             <TextField
                                 className={`${Styles.text_input}`} 
                                 id="phone" 
-                                label="Mobile No." 
+                                value={userData.contactNo || ''}
+                                type='number'
+                                label="Mobile No."
+                                inputProps={{maxLength:'10'}} 
                                 variant="outlined" 
-                                onClick={(e)=>{handleChange('mobile', e.target.value)}}
+                                onChange={(e)=>{handleChange('contactNo', e.target.value)}}
                                 />
                         </div>
                     </Grid>
@@ -87,20 +93,20 @@ const Contact = (props) =>{
                                 multiline
                                 maxRows={4}
                                 rows={4}
-                                onClick={(e)=>{handleChange('desc', e.target.value)}}
+                                onChange={(e)=>{handleChange('description', e.target.value)}}
                             />
                         </div>
                     </Grid>
-                    <Grid className="text-center" xs={6}>
-                        <div className={`card_holder`}>
-                            <Button 
-                                variant="outlined"
-                                className={`${Styles.text_input}`}
-                                onClick={handleSubmit} 
-                            >
-                                Submit
-                            </Button>
-                        </div>
+                    <Grid className="text-center" xs={12}>
+                            <div className={`card_holder ${Styles.submit_btn}`}>
+                                <Button 
+                                    variant="contained"
+                                    className={`${Styles.text_input}`}
+                                    onClick={handleSubmit} 
+                                >
+                                    Submit
+                                </Button>
+                            </div>
                     </Grid>
                 </Grid>
             </Container>

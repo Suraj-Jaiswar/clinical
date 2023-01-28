@@ -119,11 +119,19 @@ $paddings: 0, 5, 10, 15, 20;
     }
 }
 .header_brand{
+    padding-top: 4px;
     img{
-        height: 80px;
+        height: 60px;
         width: 200px;
         object-fit: contain;
     }
+}
+@media(max-width : 425px){
+    .header_brand{
+        img{
+            width: 130px;
+        }
+    }   
 }
 .footer{
     .logo-footer {

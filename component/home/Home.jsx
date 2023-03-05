@@ -91,9 +91,9 @@ const Home = (props) =>{
                         </Grid>
                         <Grid>
                             <p className={`${styles.content}`}>
-                                Clinical Trial Research Services (CTRS) is a India Based SMO offers cutting-edge, specialised clinical trial and research-related services. Above our name, expresses our enthusiasm for conducting clinical trials, doing research, and providing the globe with the best services and treatment solutions. We provide exceptional site management and project management and monitoring of phase II, III and IV clinical trials involving pharmaceutical, biological and medical device products to its clients. We maintain High retention of our clients due to our commitment, responsiveness, flexibility, performance, cost effectiveness and unmatched quality. We complement each client's working culture and management style and are flexible to their requirements
+                                Clinical Trial Research Services (CTRS) is an India-based SMO that offers cutting-edge, specialised clinical trial and research-related services. Above our name, we express our enthusiasm for conducting clinical trials, doing research, and providing the globe with the best services and treatment solutions. We provide exceptional site management, project management, and monitoring of phases II, III, and IV clinical trials involving pharmaceutical, biological, and medical device products to its clients. We maintain high client retention rates due to our commitment, responsiveness, flexibility, performance, cost effectiveness, and unmatched quality. We complement each client's working culture and management style and are flexible with their requirements.
                             </p>
-                        </Grid>
+                        </Grid>     
                         <Grid>
                             <div className={`section-heading text-center ${isMobile ? "font-24" : "font-38"} mgt-25`}>
                                 <h3 className="section-title">How We Work</h3>
@@ -102,10 +102,10 @@ const Home = (props) =>{
                         <Grid>
                             <ul className={styles.content}>
                                 <li>
-                                    We deploy highly qualified Clinical Research Coordinators (CRCs) who are protocol-specific to each research site. CRCs are assigned by Principle Investigators and mostly assist investigators with non-medical evaluation related study activities when a clinical trial is being conducted.
+                                    We deploy highly qualified Clinical Research Coordinators (CRCs) who are protocol-specific to each research site. CRCs are assigned by Principle Investigators and mostly assist investigators with non-medical evaluation-related study activities when a clinical trial is being conducted.
                                 </li>
                                 <li>
-                                    Our knowledgeable research coordinators execute each clinical trial in accordance with the most recent ICH-GCP & NDCT, India
+                                    Our knowledgeable research coordinators execute each clinical trial in accordance with the most recent ICH-GCP & NDCT guidelines from India.
                                 </li>
                                 <li>
                                     Our investigators are chosen based on their prior experience with patient recruitment, the accuracy of the data, and a feasibility report created using the specific protocol.
@@ -114,19 +114,16 @@ const Home = (props) =>{
                                     We offer services across all therapeutic specialties.
                                 </li>
                                 <li>
-                                    We specialises in Contract and Legal Agreement
+                                    We also perform document preparation (such as informed consent forms (ICF), tracking forms, and recruitment materials).
                                 </li>
                                 <li>
-                                    We also perform Document preparation (such as informed consent form (ICF), tracking form, recruitment materials) 
+                                    Submission of a clinical trial to an institutional or central review board
                                 </li>
                                 <li>
-                                    Submission of clinical trial to institutional or central review board
+                                    Subject recruitment and follow-up
                                 </li>
                                 <li>
-                                    Subject recruitment and follow up
-                                </li>
-                                <li>
-                                    Reporting of serious adverse events to sponsor, CRO, and overseeing review board
+                                    Reporting of serious adverse events to the sponsor, the CRO, and the overseeing review board
                                 </li>
                             </ul>
                         </Grid>
@@ -138,17 +135,17 @@ const Home = (props) =>{
                         <Grid container spacing={2}>
                             <Grid className="text-center" xs={isMobile ? 6 : 3}>
                                 <p>
-                                    Excellence in Onsite Coordination and Monitoring of Phase II, III, and IV clinical trials.
+                                    Excellence in Onsite Coordination and Monitoring of Phase II, III, and IV Clinical Trials.
                                 </p>
                             </Grid>
                             <Grid className="text-center" xs={isMobile ? 6 : 3}>
                                 <p>
-                                    Multiple Therapeutic Segments.
+                                    Multiple therapeutic segments.
                                 </p>
                             </Grid>
                             <Grid className="text-center" xs={isMobile ? 6 : 3}>
                                 <p>
-                                    Quality source documentation, CRFs and other paperwork.
+                                    Quality source documentation, CRFs, and other paperwork.
                                 </p>
                             </Grid>
                             <Grid className="text-center" xs={isMobile ? 6 : 3}>

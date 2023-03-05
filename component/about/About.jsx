@@ -21,7 +21,7 @@ const About = () =>{
                         <h2>Mission</h2>
                         <ul>
                             <li>
-                                To make the world a better place for innovation creation, protection, and advancement 
+                                To make the world a better place for innovation, creation, protection, and advancement 
                             </li>
                             <li>
                                 To inspire our team to pursue greatness by fostering a positive workplace culture.
@@ -30,7 +30,7 @@ const About = () =>{
                                 To retain our clients by offering them high-quality services, completing their tasks by the deadlines they have set, and acting ethically.
                             </li>
                             <li>
-                            To focus on contributing to society by offering top-notch clinical and biopharmaceutical services within the context of sound clinical standards.
+                                To focus on contributing to society by offering top-notch clinical and biopharmaceutical services within the context of sound clinical standards.
                             </li>
                         </ul>
                     </div>
@@ -41,7 +41,7 @@ const About = () =>{
                                 Our vision is to sustain the quality and well-being of society while offering the best healthcare and research-related services and data.
                             </li>
                             <li>
-                                To ensure that CTRS is the most comfortable workplace for our employees and a one-stop shop for all of our clients' needs in order to be at the top of the list of Bio-pharma service providers globally.
+                                To ensure that CTRS is the most comfortable workplace for our employees and a one-stop shop for all of our clients' needs in order to be at the top of the list of biopharma service providers globally.
                             </li>
                         </ul>
                     </div>   
@@ -49,7 +49,7 @@ const About = () =>{
                         <h2>Values</h2>
                         <ul>
                             <li>
-                                C- Credible, comprehensive, committed, Capacious
+                                C- Credible, Comprehensive, Committed, Capacious
                             </li>
                             <li>
                                 T-  Trustworthy, Time-honoured, Transparent, Take Charge

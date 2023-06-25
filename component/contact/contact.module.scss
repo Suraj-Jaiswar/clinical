@@ -1,0 +1,16 @@
+.form_holder{
+    margin: auto;
+    width: 60vw;
+    .text_input{
+        width: 100%;
+    }
+    .submit_btn{
+        width: 300px;
+        display: inline-block;
+    }
+}
+@media (max-width : 425px){     
+    .form_holder{
+        width: 100%;
+    }
+}

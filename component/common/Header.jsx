@@ -8,7 +8,8 @@ import logo from '../../public/Logo.png';
 import Image from "next/image";
 import {MdDehaze} from 'react-icons/md';
 import { isMobile } from 'react-device-detect';
-
+import styles from "./heading.module.scss";
+import { MdKeyboardArrowDown } from "react-icons/md";
 const Header = (props) =>{
 
     const [anchorEl, setAnchorEl] = useState(null);
@@ -55,13 +56,41 @@ const Header = (props) =>{
                                             <Link href='/about'>About Us</Link>
                                         </li>
                                         <li className="link text-white">
-                                            <Link href='/'>Services</Link>
+                                            <div className={styles["drop-service"]}>
+                                                <div className={"fs-b"}>Services<span className={styles["arrow"]}><MdKeyboardArrowDown size={"20px"}/></span></div>
+                                                <Link href="/services">
+                                                    <ul className={styles["serivce-list"]}>
+                                                        <li>Site Management</li>
+                                                        <li>Ethics Committee</li>
+                                                        <li>Regulatory Affairs</li>
+                                                        <li>Clinical Trial Registry India</li>
+                                                        <li>Training</li>
+                                                    </ul>    
+                                                </Link>
+                                            </div>
                                         </li>
                                         <li className="link text-white">
-                                            <Link href='/'>Work with us</Link>
-                                        </li>
-                                        <li className="link text-white">
-                                            <Link href='/'>Work</Link>
+                                            <div className={styles["drop-thea"]}>
+                                                <div className={"fs-b"}>Therapeutic Area <span className={styles["arrow"]}><MdKeyboardArrowDown size={"20px"}/></span></div>
+                                                <Link href="/therapeutic">
+                                                    <ul className={styles["thea-list"]}>
+                                                        <li>COVID-19 Clinical Trial</li>
+                                                        <li>Cardiology</li>
+                                                        <li>Oncology</li>
+                                                        <li>Respiratory</li>
+                                                        <li>Rheumatology</li>
+                                                        <li>Dermatology</li>
+                                                        <li>Orthopaedics</li>
+                                                        <li>Neurology and Neurosurgery</li>
+                                                        <li>Ophthalmology</li>
+                                                        <li>Nutraceuticals and Cosmetics</li>
+                                                        <li>Endocrinology / Metabolism</li>
+                                                        <li>Infectious Disease</li>
+                                                        <li>Pulmonology</li>
+                                                        <li>Nephrology</li>
+                                                    </ul>
+                                                </Link>        
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -98,7 +127,7 @@ const Header = (props) =>{
                                         <Link href='/'>Services</Link>
                                     </Typography>
                                     <Typography sx={{ p: 2 }} onClick={handleClose}>
-                                        <Link href='/'>Work With Us</Link>
+                                        <Link href='/'>Therapeutic Area</Link>
                                     </Typography>
                                     <Typography sx={{ p: 2 }} onClick={handleClose}>
                                         <Link href='/contact'>Contact Us</Link>

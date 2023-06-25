@@ -57,7 +57,32 @@ const About = () =>{
                             <li>R- Reliable, Responsible, Reputable, Rational</li>
                             <li>S- Scientific, Skilled, Sincere, Supportive</li>
                         </ul>
-                    </div>   
+                    </div> 
+                    <div className='team-management'>
+                        <div className='mgtb-30 font-30 fs-b'>
+                            Team Management
+                        </div>
+                        <Grid container spacing={2}>
+                            <Grid xs={4}>
+                                <div className={`team_title text-center`}>
+                                    <strong className={`font-24`}>Ravi Gupta</strong>
+                                    <div className="mgt-5">Co-Founder</div>
+                                </div>
+                            </Grid>
+                            <Grid xs={4}>
+                                <div className={`team_title text-center`}>
+                                    <strong className={`font-24`}>Safiq Shah</strong>
+                                    <div className="mgt-5">Co-Founder</div>
+                                </div>
+                            </Grid>
+                            <Grid xs={4}>
+                                <div className={`team_title text-center`}>
+                                    <strong className={`font-24`}>Sunny Goel</strong>
+                                    <div className="mgt-5">Co-Founder</div>
+                                </div>
+                            </Grid>
+                        </Grid>
+                    </div>  
                 </div>
             </Container>
         </section>

@@ -94,7 +94,7 @@ const Footer = () => {
                                                 </Link>
                                             </div>
                                             <div className="social-holder mgtb-10">
-                                                Linkdin
+                                                LinkedIn
                                             </div>
                                         </div>
                                     </li>

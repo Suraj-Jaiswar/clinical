@@ -1,3 +1,27 @@
+.banner-holder{
+    position: relative;
+    .benner-img{
+        width: 100%;
+        height: 500px;
+    }
+    img{
+        // object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    .banner-text{
+        position: absolute;
+        width: 400px;
+        color: #fff;
+        font-size: 40px;
+        line-height: 70px;
+        left: 100px;
+        font-weight: 700;
+        top: 20%;
+        font-family: 'Poppins';
+    }
+}
+
 .card_title{
     display: inline-block;
     position: relative;
@@ -92,4 +116,38 @@
     word-break: break-word;
     word-wrap: break-word;
     font-weight: 400;
+}
+.read-more-btn{
+    border: 1px solid #d2d2d2;
+    padding: 15px 30px;
+    background-color: #1976d2;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 170px;
+    text-align: center;
+}
+.about-section{
+    p{
+        line-height: 1.5;
+    }
+}
+.service-content-holder{
+    padding: 30px;
+    background-color: #1976d2;
+    color: #fff;
+    ul{
+        list-style: none;
+        padding: 0px;
+        width: 50%;
+        display: inline-block;
+    }
+    li{
+        padding: 10px;
+        cursor: pointer;
+        transition: transform .2s;
+    }
+    li:hover{
+        transform: scale(1.2);
+    }
 }

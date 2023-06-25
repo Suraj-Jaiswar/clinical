@@ -3,6 +3,11 @@ import styles from "./home.module.scss";
 import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
 import { isMobile } from 'react-device-detect';
+import { Button } from '@mui/material';
+import Link from 'next/link';
+import banner from '../../public/banner.jpg';
+import Image from "next/image";
+
 
 const Home = (props) =>{
 
@@ -16,6 +21,19 @@ const Home = (props) =>{
         <>
             {loaded ? 
                 <section className="section-container">
+                    <Grid className="banner-container">
+                        <div className={styles["banner-holder"]}>
+                            <div className={styles['benner-img']}>
+                                <Image
+                                    src={banner}
+                                    alt="logo"
+                                />
+                            </div>
+                            <div className={styles['banner-text']}>
+                                The promise of conformity to standards and ethics - CTRS
+                            </div>
+                        </div>
+                    </Grid>
                     <Container >
                         <Grid>
                             <div className={`section-heading text-center ${isMobile ? "font-24" : "font-38"} `}>
@@ -84,7 +102,88 @@ const Home = (props) =>{
                                 </div>
                             </Grid>
                         </Grid>
-                        <Grid>
+                        <Grid className="mgt-40">
+                            <div className={`${isMobile ? "font-24" : "font-38"} mgb-25`}>
+                                <h3 className="section-title">About Us</h3>
+                            </div>
+                            <div className={styles['about-section']}>
+                                <p className='mgb-30'>Clinical Trial Research Services (CTRS) is a India Based SMO offers cutting-edge, specialised clinical trial and research-related services. Above our name, expresses our enthusiasm for conducting clinical trials, doing research, and providing the globe with the best services and treatment solutions. We provide exceptional site management and project management and monitoring of phase II, III and IV clinical trials involving pharmaceutical, biological and medical device products to its clients. We maintain High retention of our clients due to our commitment, responsiveness, flexibility, performance, cost effectiveness and unmatched quality. We complement each client's working culture and management style and are flexible to their requirements.</p>
+                                <div className={`text-end ${styles["read-more-btn"]}`}>
+                                    <Link href="/about">
+                                        <span>
+                                            Read More
+                                        </span>
+                                    </Link>
+                                </div>
+                            </div>
+                        </Grid>
+                        <Grid className="pdt-40" container spacing={3}>
+                            <Grid className="" xs={isMobile ? 12 : 6}>
+                                <div className={`${isMobile ? "font-24" : "font-38"} mgb-25`}>
+                                    <h3 className="section-title">Services</h3>
+                                </div>
+                                <div className='mgb-20'>
+                                    Efficiently launch your product with our customised services
+                                </div>
+                                <div className=''>
+                                    This model increases quality and speed while significantly reducing the cost of the whole program.
+                                </div>
+                            </Grid>
+                            <Grid className="" xs={isMobile ? 12 : 6}>
+                                <div className={styles['service-content-holder']}>
+                                    <ul>
+                                        <li>Site Selection & Feasibility</li>
+                                        <li>Specialised Site Support</li>
+                                        <li>Rapid Start-up</li>
+                                        <li>Patient Recruitment & Retention</li>
+                                        <li>Overall study management</li>
+                                        <li>Training</li>
+                                    </ul>
+                                    <div className={`text-end ${styles["read-more-btn"]}`}>
+                                        <Link href="/services">
+                                            <span>
+                                                Read More
+                                            </span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Grid>
+                        </Grid>
+                        <Grid className="pdt-40" container spacing={3}>
+                            <Grid className="" xs={isMobile ? 12 : 6}>
+                                <div className={styles['service-content-holder']}>
+                                    <Link href="/therapeutic">
+                                        <ul>
+                                            <li>COVID-19 Clinical Trial</li>
+                                            <li>Cardiology</li>
+                                            <li>Oncology</li>
+                                            <li>Respiratory</li>
+                                            <li>Rheumatology</li>
+                                            <li>Dermatology</li>
+                                            <li>Orthopaedics</li>
+                                            <li>Neurology and Neurosurgery</li>
+                                            <li>Ophthalmology</li>
+                                        </ul>
+                                    </Link>
+                                    <div className={`text-end ${styles["read-more-btn"]}`}>
+                                        <Link href="/therapeutic">
+                                            <span>
+                                                Read More
+                                            </span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Grid>
+                            <Grid className="" xs={isMobile ? 12 : 6}>
+                                <div className={`${isMobile ? "font-24" : "font-38"} mgb-25`}>
+                                    <h3 className="section-title">Therapeutic Areas</h3>
+                                </div>
+                                <div className='mgb-20'>
+                                    We have an expanding network of dedicated experienced and quality conscious investigators and multispeciality hospitals. We also have network with many renowned CROs and Sponsors medical devices.
+                                </div>
+                            </Grid>
+                        </Grid>
+                        {/* <Grid>
                             <div className={`section-heading text-center ${isMobile ? "font-24" : "font-38"} mgt-25`}>
                                 <h3 className="section-title">Who We Are</h3>
                             </div>
@@ -93,8 +192,8 @@ const Home = (props) =>{
                             <p className={`${styles.content}`}>
                                 Clinical Trial Research Services (CTRS) is an India-based SMO that offers cutting-edge, specialised clinical trial and research-related services. Above our name, we express our enthusiasm for conducting clinical trials, doing research, and providing the globe with the best services and treatment solutions. We provide exceptional site management, project management, and monitoring of phases II, III, and IV clinical trials involving pharmaceutical, biological, and medical device products to its clients. We maintain high client retention rates due to our commitment, responsiveness, flexibility, performance, cost effectiveness, and unmatched quality. We complement each client's working culture and management style and are flexible with their requirements.
                             </p>
-                        </Grid>     
-                        <Grid>
+                        </Grid>      */}
+                        {/* <Grid>
                             <div className={`section-heading text-center ${isMobile ? "font-24" : "font-38"} mgt-25`}>
                                 <h3 className="section-title">How We Work</h3>
                             </div>
@@ -126,8 +225,8 @@ const Home = (props) =>{
                                     Reporting of serious adverse events to the sponsor, the CRO, and the overseeing review board
                                 </li>
                             </ul>
-                        </Grid>
-                        <Grid>
+                        </Grid> */}
+                        {/* <Grid>
                             <div className={`section-heading text-center ${isMobile ? "font-24" : "font-38"} mgt-25`}>
                                 <h3 className="section-title">Why Choose Us</h3>
                             </div>
@@ -153,8 +252,8 @@ const Home = (props) =>{
                                     Large and diverse patient population with a positive attitude towards clinical research.
                                 </p>
                             </Grid> 
-                        </Grid>
-                        <Grid>
+                        </Grid> */}
+                        {/* <Grid>
                             <div className={`section-heading text-center ${isMobile ? "font-24" : "font-38"} mgt-25`}>
                                 <h3 className="section-title">Services We Offered</h3>
                             </div>
@@ -178,32 +277,13 @@ const Home = (props) =>{
                             <Grid xs={isMobile ? 6 : 3}><span>Infectious</span> Disease</Grid>
                             <Grid xs={isMobile ? 6 : 3}><span>Pulmonology</span></Grid>
                             <Grid xs={isMobile ? 6 : 3}><span>Nephrology</span></Grid>
-                        </Grid>
+                        </Grid> */}
                         {/* <Grid>
                             <div className={`section-heading text-center font-38 mgt-25`}>
                                 <h3 className="section-title">Our Leaders</h3>
                             </div>
                         </Grid>
-                        <Grid container spacing={2}>
-                            <Grid xs={4}>
-                                <div className={`team_title text-center`}>
-                                    <strong className={`font-24`}>Ravi Gupta</strong>
-                                    <div className="mgt-5">Co-Founder</div>
-                                </div>
-                            </Grid>
-                            <Grid xs={4}>
-                                <div className={`team_title text-center`}>
-                                    <strong className={`font-24`}>Safiq Shah</strong>
-                                    <div className="mgt-5">Co-Founder</div>
-                                </div>
-                            </Grid>
-                            <Grid xs={4}>
-                                <div className={`team_title text-center`}>
-                                    <strong className={`font-24`}>Sunny Goel</strong>
-                                    <div className="mgt-5">Co-Founder</div>
-                                </div>
-                            </Grid>
-                        </Grid> */}
+                        */}
                     </Container>
                 </section>
                 :null

@@ -107,31 +107,31 @@ const About = () =>{
                             For a trial to be fully registered, the minimum amount of information to be entered in the register is provided under the trial registration data set. The CTRI data set which needs to be submitted are mentioned below:
                         </div>
                         <ul>
-                            <li>1.Public title of study – Study title in simple language intended for the lay public</li>
-                            <li>2.Scientific title of the study (Acronym, if any) as it appears in the study protocol</li>
-                            <li>3.Secondary IDs (if any) - Secondary ID includes any Protocol Number or any other Trial Registry Number, registered in a registry other than the CTRI (for example ClinicalTrials.gov).</li>
-                            <li>4.Principal Investigator’s name, official address, affiliation and designation, contact telephone and fax numbers and email ID. In case of multi-centre study (for trials being conducted in India), information of the designated contact (lead Principal Investigator or overall Trial Coordinator) from India should be included.</li>
-                            <li>5.Contact person scientific query and contact person for public query (who will respond to general queries such as current recruitment status)</li>
-                            <li>6.Source/s of monetary or material support</li>
-                            <li>7.Primary sponsor and secondary Sponsor</li>
-                            <li>8.Countries of recruitment</li>
-                            <li>9.Site/s of study</li>
-                            <li>10.Name of Ethics Committee and approval status</li>
-                            <li>11.Regulatory clearance obtained from CLA</li>
-                            <li>12.Health condition/problem studied</li>
-                            <li>13.Study type - Whether the trial is an Interventional trial, Observational trial or Post marketing surveillance. Trial part of post-graduation thesis should be mentioned accordingly</li>
-                            <li>14.Intervention and comparator agent - The International Non-Proprietary Name should be used if possible (not brand/trade names). For an unregistered drug, the generic name, chemical name, or company serial number may be used.</li>
-                            <li>15.Inclusion and exclusion criteria for participant selection, including age and sex</li>
-                            <li>16.Method of generating randomization sequence</li>
-                            <li>17.Method of allocation concealment</li>
-                            <li>18.Blinding/masking</li>
-                            <li>19.Primary and secondary outcome/s</li>
-                            <li>20.Target sample size</li>
-                            <li>21.Phase of trial</li>
-                            <li>22.Date of first enrolment</li>
-                            <li>23.Estimated duration of trial</li>
-                            <li>24.Recruitment status of trial</li>
-                            <li>25.Brief Summary – The summary may include the primary purpose of the protocol, including a brief statement of the study hypothesis. Links to publication/s details may be included if required.</li>
+                            <li>Public title of study – Study title in simple language intended for the lay public</li>
+                            <li>Scientific title of the study (Acronym, if any) as it appears in the study protocol</li>
+                            <li>Secondary IDs (if any) - Secondary ID includes any Protocol Number or any other Trial Registry Number, registered in a registry other than the CTRI (for example ClinicalTrials.gov).</li>
+                            <li>Principal Investigator’s name, official address, affiliation and designation, contact telephone and fax numbers and email ID. In case of multi-centre study (for trials being conducted in India), information of the designated contact (lead Principal Investigator or overall Trial Coordinator) from India should be included.</li>
+                            <li>Contact person scientific query and contact person for public query (who will respond to general queries such as current recruitment status)</li>
+                            <li>Source/s of monetary or material support</li>
+                            <li>Primary sponsor and secondary Sponsor</li>
+                            <li>Countries of recruitment</li>
+                            <li>Site/s of study</li>
+                            <li>Name of Ethics Committee and approval status</li>
+                            <li>Regulatory clearance obtained from CLA</li>
+                            <li>Health condition/problem studied</li>
+                            <li>Study type - Whether the trial is an Interventional trial, Observational trial or Post marketing surveillance. Trial part of post-graduation thesis should be mentioned accordingly</li>
+                            <li>Intervention and comparator agent - The International Non-Proprietary Name should be used if possible (not brand/trade names). For an unregistered drug, the generic name, chemical name, or company serial number may be used.</li>
+                            <li>Inclusion and exclusion criteria for participant selection, including age and sex</li>
+                            <li>Method of generating randomization sequence</li>
+                            <li>Method of allocation concealment</li>
+                            <li>Blinding/masking</li>
+                            <li>Primary and secondary outcome/s</li>
+                            <li>Target sample size</li>
+                            <li>Phase of trial</li>
+                            <li>Date of first enrolment</li>
+                            <li>Estimated duration of trial</li>
+                            <li>Recruitment status of trial</li>
+                            <li>Brief Summary – The summary may include the primary purpose of the protocol, including a brief statement of the study hypothesis. Links to publication/s details may be included if required.</li>
                         </ul>
                     </div>
                 </div>

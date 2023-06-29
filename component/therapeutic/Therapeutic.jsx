@@ -39,7 +39,7 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Oncology
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Hemato Oncology</li>
                                 <li>Medical Oncology</li>
@@ -47,7 +47,7 @@ const Therapeutic = () =>{
                                 <li>Radiation Oncology</li>
                                 <li>Immuno Therapy etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -58,13 +58,13 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Cardiology
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Hypertension,IHD</li>
                                 <li>MI,Cardiac Arrest</li>
                                 <li>Cardio surgery etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -75,7 +75,7 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Dermatology
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Skin Cancer</li>
                                 <li>Eczema</li>
@@ -84,7 +84,7 @@ const Therapeutic = () =>{
                                 <li>Psoriasis</li>
                                 <li>Vitiligo etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -95,12 +95,12 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Pediatrics & Neonatology
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Bronchitis</li>
                                 <li>Common Cold</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                 </Grid>
                 <Grid container spacing={3}>
@@ -113,7 +113,7 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             General Medicine
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>DM Type 1&2</li>
                                 <li>Hematology</li>
@@ -121,7 +121,7 @@ const Therapeutic = () =>{
                                 <li>Anaemia</li>
                                 <li>Infectious Diseases etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -132,12 +132,12 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Neuro-psychiatry
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Neurology</li>
                                 <li>Psychiatry Disorder etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -148,14 +148,14 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Orthopedic
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>RA</li>
                                 <li>OA</li>
                                 <li>Osteoporosis</li>
                                 <li>Surgeries etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -166,13 +166,13 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Respiratory Medicine
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Asthma</li>
                                 <li>COPD</li>
                                 <li>Intensive Care etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                 </Grid>
                 <Grid container spacing={3}>
@@ -185,7 +185,7 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Hepato-Gastroenterology
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>IBD (Ulcerative Colitis & Chron’s)</li>
                                 <li>Peptic Ulcer</li>
@@ -193,7 +193,7 @@ const Therapeutic = () =>{
                                 <li>GERD,Gastric Ulcer</li>
                                 <li>Constipation etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -204,13 +204,13 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Uro-Nephrology
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Urology</li>
                                 <li>Nephrology</li>
                                 <li>CKD & AKD etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -221,13 +221,13 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Ophthalmology
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Glaucoma</li>
                                 <li>Diabetic Retinopathy</li>
                                 <li>Cataract etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -238,14 +238,14 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Immunology & Infections Disease
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Viral Infection</li>
                                 <li>HIV</li>
                                 <li>Covid-19</li>
                                 <li>Dengue etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                 </Grid>
                 <Grid container spacing={3}>
@@ -258,7 +258,7 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Dental
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>Cavities</li>
                                 <li>Gingivitis (Gum Disease)</li>
@@ -266,7 +266,7 @@ const Therapeutic = () =>{
                                 <li>Periodontitis</li>
                                 <li>Sensitivity etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                     <Grid xs={3}>
                         <div className={styles['thera-card-holder']}>
@@ -277,14 +277,14 @@ const Therapeutic = () =>{
                         <div className={styles['title-holder']}>
                             Gynecology
                         </div>
-                        <div className={styles['thera-list']}>
+                        {/* <div className={styles['thera-list']}>
                             <ul>
                                 <li>PCOD</li>
                                 <li>Endometriosis</li>
                                 <li>Uterine Fibroids</li>
                                 <li>Vaginitis etc</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </Grid>
                 </Grid>
             </Container>

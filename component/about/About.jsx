@@ -1,6 +1,8 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
 import styles from "./about.module.scss";
+import Image from "next/image";
+import Ravi from '../../public/IMG_2178.JPG';
 
 const About = () =>{
     return(
@@ -63,20 +65,31 @@ const About = () =>{
                             Team Management
                         </div>
                         <Grid container spacing={2}>
-                            <Grid xs={4}>
-                                <div className={`team_title text-center`}>
-                                    <strong className={`font-24`}>Ravi Gupta</strong>
-                                    <div className="mgt-5">Co-Founder</div>
+                            <Grid xs={12}>
+                                <div className={`team_title text-center mgb-40`}>
+                                    <div className={styles['founder-img']}>
+                                        <Image src={Ravi} alt="img"/>
+                                    </div>
+                                    <div>
+                                        <strong className={`font-24`}>Ravi Gupta</strong>
+                                        <div className="mgt-5">Founder</div>
+                                    </div>
                                 </div>
                             </Grid>
-                            <Grid xs={4}>
-                                <div className={`team_title text-center`}>
+                        </Grid>
+                        <div className={styles['team-arrow']}>
+                            <div className={`${styles["arrow-line"]} ${styles["left"]}`}></div>
+                            <div className={`${styles["arrow-line"]} ${styles["right"]}`}></div>
+                        </div>
+                        <Grid container spacing={2}>
+                            <Grid xs={6}>
+                                <div className={`team_title text-center mgt-40`}>
                                     <strong className={`font-24`}>Safiq Shah</strong>
                                     <div className="mgt-5">Co-Founder</div>
                                 </div>
                             </Grid>
-                            <Grid xs={4}>
-                                <div className={`team_title text-center`}>
+                            <Grid xs={6}>
+                                <div className={`team_title text-center mgt-40`}>
                                     <strong className={`font-24`}>Sunny Goel</strong>
                                     <div className="mgt-5">Co-Founder</div>
                                 </div>

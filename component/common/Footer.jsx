@@ -85,16 +85,18 @@ const Footer = () => {
                                 <ul className="sub-link sub-link-height">
                                     <li>
                                         <div className="social-wrapper">
-                                            <div className="social-holder mgtb-10">
+                                            {/* <div className="social-holder mgtb-10">
                                                 Facebook
-                                            </div>
+                                            </div> */}
                                             <div className="social-holder mgtb-10">
-                                                <Link href="" target="_blank" rel="noreferrer">
+                                                <Link href="https://www.instagram.com/ctr_services/" target="_blank" rel="noreferrer">
                                                     Instagram
                                                 </Link>
                                             </div>
                                             <div className="social-holder mgtb-10">
-                                                LinkedIn
+                                                <Link href="https://www.linkedin.com/company/clinical-trial-research-services/" target="_blank" rel="noreferrer">
+                                                    LinkedIn
+                                                </Link>
                                             </div>
                                         </div>
                                     </li>
